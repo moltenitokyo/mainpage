@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molteni & C | Central Hub</title>
+    <style>
+        /* ブランドブックに基づくカラー設定 */
+        :root {
+            --bg-color: #2D2926; /* PDF 1枚目の背景色に近いダークブラウン */
+            --gold-color: #C5A35D; /* PDF タイトルのゴールド */
+            --text-white: #FFFFFF;
+            --button-bg: transparent;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        /* ロゴ部分 */
+        .logo {
+            font-size: 28px;
+            font-family: "Georgia", serif; /* 高級感のあるセリフ体 */
+            letter-spacing: 0.1em;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            letter-spacing: 0.3em;
+            color: var(--gold-color);
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        /* リンクボタンのスタイル */
+        .link-button {
+            display: block;
+            width: 100%;
+            padding: 18px 0;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: var(--text-white);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: var(--button-bg);
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        /* スマホでのタップ感とPCでのホバー */
+        .link-button:active, .link-button:hover {
+            border-color: var(--gold-color);
+            color: var(--gold-color);
+            background-color: rgba(197, 163, 93, 0.05);
+        }
+
+        /* フッター */
+        .footer {
+            margin-top: auto;
+            padding-bottom: 40px;
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            opacity: 0.6;
+        }
+
+        /* PC用の微調整 */
+        @media (min-width: 768px) {
+            .container { padding: 100px 0; }
+            .link-button { padding: 22px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">Molteni&C</div>
+        <div class="subtitle">Finishes Guideline 2025</div>
+
+        <!-- リンク先は適宜書き換えてください -->
+        <a href="TOUR_URL" class="link-button" target="_blank">360° VIRTUAL STORE TOUR</a>
+        <a href="CATALOG_URL" class="link-button" target="_blank">DIGITAL CATALOG 2025</a>
+        <a href="COLLECTION_URL" class="link-button" target="_blank">PRODUCT COLLECTION</a>
+        <a href="FINISHES_URL" class="link-button" target="_blank">FINISHES GUIDELINE</a>
+        <a href="INSTAGRAM_URL" class="link-button" target="_blank">INSTAGRAM</a>
+
+        <div class="footer">
+            &copy; 2025 MOLTENI & C - ALL RIGHTS RESERVED
+        </div>
+    </div>
+
+</body>
+</html>
